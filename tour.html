@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>W3.CSS Template</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {font-family: "Lato", sans-serif}
+    .mySlides {display: none}
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html"    class="w3-bar-item w3-button w3-padding-large">DISCOVER</a>
+            <a href="band.html"     class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOP</a>
+            <a href="tour.html"     class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+            <a href="contact.html"  class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        </div>
+    </div>
+<!-- Navbar -->
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+        <a href="band.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+        <a href="tour.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- The Tour Section -->
+  <div class="w3-pink" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">ข่าวเพลง</h2>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/images/rose.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>โรเซ่ BLACKPINK ปล่อยคลิปสมัยเด็ก และเล่าเรื่องผ่านบทสัมภาษณ์ใน YouTube ของตัวเอง</b></p>
+            <p class="w3-opacity"> 25 นาที ที่แล้ว</p>
+            <p>โรเซ่ (ROSÉ) BLACKPINK ประเดิมคลิปแรกใน YouTube channel ของตัวเองด้วยคลิปสัมภาษณ์ เล่าเรื่องของตัวเองตั้งแต่สมัยเด็ก จนถึงปัจจุบัน พร้อมคลิปสมัยเด็กสุด exclusive ผ่านบทเพลงโซโล่ “On The Ground”</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">READ</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/images/boy.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>ส่องความหล่อ 90 เด็กฝึก "CHUANG 2021" ก่อนการคัดออกครั้งใหญ่ (อัลบั้มภาพ)</b></p>
+            <p class="w3-opacity">2 ชั่วโมง ที่แล้ว</p>
+            <p>ใกล้เข้ามาเรื่อยๆ แล้วสำหรับสัปดาห์ที่ 5 ของรายการ Chuang 2021 ซึ่งเป็นวีคที่น่าจะทำให้หลายๆ คนเสียน้ำตา เพราะแฟนๆ จะต้องโบกมือลา 35 เด็กฝึก ทำให้วันนี้ทาง Sanook ขอนำภาพของพวกเขามาให้แฟนๆ ได้ชมกันอีกครั้งก่อนโบกมือลา</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">READ</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/images/zee.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>TELEx TELEXs เผยที่มาเอ็มวีใหม่ "Friend" กับเรื่องรักวัยเรียนชวนจิกหมอน (คลิป)</b></p>
+            <p class="w3-opacity"> 5 ชั่วโมง ที่แล้ว</p>
+            <p>หลังจากรอคอยมาหลายเดือน TELEx TELEXs ก็ได้ปล่อยอัลบั้ม WHEN YOU HAVE NOTHING TO DO JUST GO TO SLEEP ออกมาให้ฟังแล้ว โดยมีงานเพลงใหม่ถึง 14 เพลง ที่มีลายเซ็นเฉพาะตัวของวง พร้อมกับซิงเกิลล่าสุดที่มีชื่อว่า "Friend"</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">READ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">จัดทำโดย ศิวกร อัศวนิเวศน์</a></p>
+    </footer>
+    <script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
